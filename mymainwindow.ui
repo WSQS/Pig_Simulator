@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyMainWindow</class>
+ <widget class="QMainWindow" name="MyMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>养猪模拟器</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>110</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Label</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menufile">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <addaction name="actionnew"/>
+    <addaction name="actionopen"/>
+    <addaction name="actionsave"/>
+    <addaction name="actionquit"/>
+   </widget>
+   <widget class="QMenu" name="menushezhi">
+    <property name="title">
+     <string>设置(&amp;S)</string>
+    </property>
+   </widget>
+   <addaction name="menufile"/>
+   <addaction name="menushezhi"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionnew">
+   <property name="text">
+    <string>新开存档(&amp;N)</string>
+   </property>
+  </action>
+  <action name="actionopen">
+   <property name="text">
+    <string>打开存档(&amp;O)</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="text">
+    <string>储存存档(&amp;S)</string>
+   </property>
+  </action>
+  <action name="actionquit">
+   <property name="text">
+    <string>退出(&amp;Q)</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
